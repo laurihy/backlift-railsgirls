@@ -1,0 +1,161 @@
+/*
+
+This is a CSS-file, it defines all styles, such as colors, 
+fonts and columns in our web page. It's good to separate 
+content (index.html) and style (this file) so, because then
+it's easier modify each separately. 
+
+Here's a brief introduction to CSS: 
+	- In index.html we define tags with class-attributes like 
+	  <div class="wrapper"> and then attach styles to it with
+	  .wrapper {} (notice the dot in front of class name)
+	- If there's no dot in front, it targets all <tags> with that name
+	- Inside curly braces ({}) there are properties like 'background' 
+	  values like '#fff'. Each attribute: value -pair ends with semicolon (;)
+	- Color-values start with  '#' followed by values for red, green and blue (=RGB).
+	  Letter-combination is actually a number, try out: http://colorschemedesigner.com/
+	  
+www.cssbasics.com/
+
+Happy hacking!
+
+*/
+
+/* 
+
+Load nicer fonts from Google Webfonts: www.google.com/webfonts
+
+	- Browse through fonts. When you find one you like, click 
+	  'Quick use'
+	- Add @import url() below and/or follow instructions 
+	  at Google webfonts
+	- NOTE: by default Backlift URL begins with 'https',
+	  make sure the URL you import does as well. Otherwise it
+	  doesn't work.
+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Signika:400,600,700,300');
+
+/* define basic styles to our web page */
+
+body {
+	background: #fff;
+	font-family: 'Signika', sans-serif;
+	font-weight: 300;
+	color: #222;
+	font-size: 16px;
+	line-height: 1.4em;
+}
+
+
+
+
+/*
+
+Various containers that affect page structure and layout:
+
+*/
+
+/* content inside .wrappers is centered. Try out different widths? */
+.wrapper {
+	max-width: 960px;
+	width: 90%;
+	margin: 0 auto;
+}
+
+/* provides container for full-width images */
+.imagerow {
+	background-attachment: scroll;
+	background-clip: border-box;
+	background-color: transparent;
+	background-origin: padding-box;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+}
+
+/* content inside .columns is divided into columns */
+.columns {
+	-moz-column-count:3; /* Firefox */
+	-webkit-column-count:3; /* Safari and Chrome */
+	column-count:3;
+}
+
+/* one section of content */
+.section {
+	width: 100%;
+	float: left;
+	padding: 60px 0;
+	border-bottom: 2px dashed #888;
+}
+
+/* clears any borders div might have */
+.noborder {
+	border: 0;
+}
+
+/* defines side area, next to .main */
+.side {
+	float: left;
+	width: 37%;
+	margin-right: 3%;
+}
+
+/* defines main content, next to .side */
+.main {
+	float: right;
+	width: 60%;
+}
+
+
+
+/*
+
+Various content types, like images, titles and text:
+
+*/
+
+/* make sure <img>-tags are not wider than their container */
+img {
+	max-width: 100%;
+}
+
+/* top level heading */
+h1 {
+	text-align: center;
+	font-size: 5em;
+	color: #444;
+	font-weight: 600;
+	line-height: 1.3em;
+}
+
+/* smaller heading */
+h2 {
+	color: #444;
+	font-size: 3em;
+	margin-bottom: 20px;
+	font-weight: 600;
+	line-height: 1em;
+}
+
+/* paragraphs, all <p>-tags */
+p {
+	margin-bottom: 1em;
+}
+
+/* <p class="ingress"> */
+p.ingress {
+	font-size: 1.3em;
+	line-height: 1.5em;
+	text-align: center;
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+
+/* <small> */
+small {
+	font-size: 0.8em;
+}
+

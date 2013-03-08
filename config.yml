@@ -39,9 +39,9 @@
 # styles: These stylesheets will be packaged and linked in order, 
 # similar to scripts.
 
-# styles:
-# - public/libraries/styles/bootstrap-2.0.4.css
-# - public/**/*.css
+styles:
+- /styles/reset.css
+- /**/*.css
 
 
 # optimize: The optimize flag controls whether or not backlift 

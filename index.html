@@ -1,0 +1,93 @@
+<!-- 
+
+This is a template file for building static websites.
+Learn more about HTML: https://developer.mozilla.org/en-US/learn/html
+
+-->
+
+<!doctype html>
+<html>
+
+	<head>
+		<!-- 
+		These are Backlift's variables. They import javascript-files and CSS-styles
+		Specified in config.yml -file
+		-->
+
+		{{$ scripts}}
+		{{$ styles}}
+
+		<title>Template</title>
+		<link rel="icon" type="image/png" href="./favicon.ico">
+
+	</head>
+
+
+	<body>
+
+		<div class="imagerow" style="background-image:url('/images/Big-Sur.jpg'); height: 400px;"></div>
+
+		<div class="wrapper">
+			<div class="section">
+
+				<h1>Hello there!</h1>
+				<p class="ingress">Why not turn this template into your personal website or portfolio?</p>
+
+				<!-- content inside this div is divided into columns, check out css/style.css -->
+				<div class="columns">
+					<p>Lorem ipsum text is just a placeholder picked from <a href="http://lipsum.com">www.lipsum.com</a>. Curabitur convallis iaculis ante, laoreet molestie turpis iaculis eu. Etiam eget dolor ac orci porttitor pharetra id a quam. Morbi in sapien dui. Ut auctor iaculis lectus, vel semper ipsum varius ut. Aliquam erat volutpat. Nunc blandit ligula in nibh feugiat facilisis pellentesque ut neque. Phasellus enim nulla, feugiat sed eleifend a, ornare ac leo. Donec ornare nisi ultrices orci interdum rhoncus.</p>
+
+					<p>Morbi vitae mollis orci. Duis eget magna leo. Mauris sit amet erat sit amet justo posuere egestas sit amet pretium urna. Cras sit amet mauris dolor.</p>
+
+					<p>Nunc blandit posuere libero nec egestas. Nam et ipsum in mauris scelerisque bibendum eget vel urna. Sed sodales velit ut nulla mattis pretium. Aliquam non dolor eget tellus porta condimentum sed quis magna. In bibendum euismod arcu sit amet tristique. Suspendisse varius malesuada ullamcorper. Sed nisl purus, gravida nec tincidunt sed, tristique ut lectus. Pellentesque laoreet tempor nulla, in volutpat felis pharetra id.</p>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="wrapper">
+			<div class="section">
+				
+				<div class="side">
+					<img src="http://placekitten.com/500/200" />
+					<small>This is a cat, woop woop woop</small>
+				</div>
+
+				<div class="main">
+					<h2>Chrome's Inspect Element</h2>
+
+					<p>One great tool for debugging and developing websites (in Chrome browser) is Inspect Element. Just right-click and choose "Inspect element".With the tool, you can view and highlight different sections of HTML, see which part is where and modify their styles. On the panel on the right side, you can also directly modify elements styles.</p>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="wrapper">
+			<div class="section">
+				
+				<div class="side">
+					<img src="http://placekitten.com/500/500" />
+					<small>This is a cat, woop woop woop</small>
+				</div> <!-- /image -->
+
+				<div class="main">
+					<h2>Second section</h2>
+					<p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non neque nunc, eget egestas risus. Vivamus mauris enim, iaculis non consectetur nec, malesuada nec lacus. Phasellus sem arcu, pulvinar ac bibendum fringilla, facilisis at libero. Integer placerat luctus augue eget lobortis.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non neque nunc, eget egestas risus. Vivamus mauris enim, iaculis non consectetur nec, malesuada nec lacus. Phasellus sem arcu, pulvinar ac bibendum fringilla, facilisis at libero. Integer placerat luctus augue eget lobortis.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non neque nunc, eget egestas risus. Vivamus mauris enim, iaculis non consectetur nec, malesuada nec lacus. Phasellus sem arcu, pulvinar ac bibendum fringilla, facilisis at libero. Integer placerat luctus augue eget lobortis.</p>
+				</div> <!-- /main -->
+
+			</div>
+		</div>
+
+		<div class="wrapper">
+			<div class="section noborder">
+				
+				<p class="ingress">Some conclusion here?</p>
+
+			</div>
+		</div>
+
+	</body>
+
+</html>
